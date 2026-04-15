@@ -191,10 +191,9 @@
       <section class="chapter">
         <div class="chapter-heading">
           <p class="section-kicker">05</p>
-          <h3 data-i18n="chapter_5_title">Publication and recognition</h3>
+          <h3 data-i18n="chapter_5_title">Video documentation</h3>
           <p data-i18n="chapter_5_body">
-            This part keeps the project recognition material, including the journal cover feature that extended the
-            project into a broader scientific communication context.
+            Original project videos documenting concept presentation, modeling review, and real-world interaction.
           </p>
         </div>
         <div id="video-grid" class="media-grid media-grid-videos"></div>
@@ -359,9 +358,9 @@
           chapter_4_note_kicker: "Design note",
           chapter_4_note_body:
             "Using the same directory structure on the website makes the project archive more faithful to the way I actually organized the work during development.",
-          chapter_5_title: "Publication and recognition",
+          chapter_5_title: "Video documentation",
           chapter_5_body:
-            "This part keeps the project recognition material, including the journal cover feature that extended the project into a broader scientific communication context.",
+            "Original project videos documenting concept presentation, modeling review, and real-world interaction.",
           noetix_header_kicker: "Project 02",
           noetix_header_title: "Noetix robotics product family",
           noetix_header_body:
@@ -449,9 +448,9 @@
           chapter_4_note_kicker: "设计说明",
           chapter_4_note_body:
             "网站和本地项目使用同样的目录结构，会更接近我实际整理项目材料时的方式，也更方便之后继续补图。",
-          chapter_5_title: "发表与项目亮点",
+          chapter_5_title: "视频记录",
           chapter_5_body:
-            "这一部分保留项目的重要外部成果，例如期刊封面等能体现传播影响力的材料。",
+            "保留项目原始视频，记录概念展示、建模过程与真实场景中的互动状态。",
           noetix_header_kicker: "项目 02",
           noetix_header_title: "松延动力产品系列",
           noetix_header_body:
@@ -515,7 +514,10 @@
       ];
 
       const videoItems = [
-        { base: "./assets/deepcybo-live/", file: "JPCL.jpg", type: "image", caption: { en: "DeepCybo Prime featured on the cover of J. Phys. Chem. Lett.", zh: "DeepCybo Prime 登上 J. Phys. Chem. Lett. 封面。" } }
+        { base: `${deepcyboBase}初期概念设计/`, file: "764_raw.MP4", type: "video", caption: { en: "Concept-stage presentation video.", zh: "初期概念展示视频。" } },
+        { base: `${deepcyboBase}3D-Model/`, file: "12175_raw.mov", type: "video", caption: { en: "3D model review video.", zh: "3D 模型审视视频。" } },
+        { base: `${deepcyboBase}与人合影/`, file: "1768.MP4", type: "video", caption: { en: "Exhibition interaction video.", zh: "展会互动视频。" } },
+        { base: `${deepcyboBase}与人合影/`, file: "2017.MP4", type: "video", caption: { en: "On-site presentation video.", zh: "现场展示视频。" } }
       ];
 
       const noetixBase = "./assets/noetix/";
