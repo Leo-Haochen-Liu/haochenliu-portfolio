@@ -179,10 +179,10 @@ figure {
 }
 
 h1 {
-  margin-bottom: 18px;
-  font-size: clamp(3rem, 5vw, 5.8rem);
-  line-height: 0.94;
-  max-width: 12ch;
+  margin-bottom: 10px;
+  font-size: clamp(2.8rem, 4.4vw, 4.8rem);
+  line-height: 0.96;
+  max-width: 9ch;
 }
 
 h2 {
@@ -196,6 +196,7 @@ h3 {
 }
 
 .lede,
+.hero-subtitle,
 .overview-card p,
 .section-summary,
 .chapter-heading p,
@@ -204,6 +205,12 @@ h3 {
 .note-panel p {
   color: var(--muted);
   line-height: 1.72;
+}
+
+.hero-subtitle {
+  margin: 0 0 18px;
+  max-width: 28rem;
+  font-size: 1.08rem;
 }
 
 .hero-actions {
@@ -262,14 +269,10 @@ h3 {
 }
 
 .hero-stage {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) 240px;
-  gap: 16px;
-  align-items: stretch;
+  display: block;
 }
 
-.hero-main-frame,
-.hero-side-card,
+.hero-carousel,
 .media-card,
 .archive-card {
   margin: 0;
@@ -280,14 +283,16 @@ h3 {
   cursor: zoom-in;
 }
 
-.hero-main-frame {
+.hero-carousel {
+  position: relative;
   min-height: 620px;
+  display: grid;
+  align-items: end;
 }
 
-.hero-main-frame img,
-.hero-side-card img,
-.hero-side-card video {
-  height: 100%;
+.hero-carousel img {
+  width: 100%;
+  height: 620px;
   object-fit: cover;
 }
 
@@ -299,26 +304,62 @@ h3 {
 
 .media-card video,
 .archive-card video {
-  aspect-ratio: 16 / 10;
-  object-fit: cover;
+  aspect-ratio: auto;
+  object-fit: contain;
+  width: 100%;
+  height: auto;
 }
 
-.hero-side-stack {
-  display: grid;
-  gap: 16px;
-}
-
-.hero-side-card {
-  min-height: 302px;
-}
-
-.hero-side-card figcaption,
+.hero-carousel figcaption,
 .media-card figcaption,
 .archive-card figcaption {
   padding: 12px 14px 14px;
   color: var(--muted);
   font-size: 0.92rem;
   line-height: 1.5;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: rgba(5, 12, 20, 0.74);
+  color: var(--text);
+  cursor: pointer;
+  z-index: 2;
+}
+
+.carousel-prev {
+  left: 16px;
+}
+
+.carousel-next {
+  right: 16px;
+}
+
+.carousel-dots {
+  position: absolute;
+  right: 16px;
+  bottom: 56px;
+  display: flex;
+  gap: 8px;
+  z-index: 2;
+}
+
+.carousel-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.carousel-dot.is-active {
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(130, 214, 255, 0.12);
 }
 
 .main-content {
@@ -391,7 +432,6 @@ h3 {
 
 .media-card video,
 .archive-card video {
-  min-height: 280px;
   background: #000;
 }
 
@@ -537,12 +577,12 @@ h3 {
     grid-template-columns: 1fr 1fr;
   }
 
-  .hero-stage {
-    grid-template-columns: 1fr;
+  .hero-carousel {
+    min-height: 520px;
   }
 
-  .hero-side-stack {
-    grid-template-columns: 1fr 1fr;
+  .hero-carousel img {
+    height: 520px;
   }
 }
 
@@ -577,12 +617,11 @@ h3 {
     grid-template-columns: 1fr;
   }
 
-  .hero-side-stack {
-    grid-template-columns: 1fr;
+  .hero-carousel {
+    min-height: auto;
   }
 
-  .hero-main-frame,
-  .hero-side-card {
-    min-height: auto;
+  .hero-carousel img {
+    height: 360px;
   }
 }

@@ -14,7 +14,7 @@
         <a class="brand" href="#top">Haochen Liu</a>
         <div class="nav-links">
           <a href="#deepcybo" data-i18n="nav_project">DeepCybo Prime</a>
-          <a href="#noetix" data-i18n="nav_noetix">Noetix Xiao Nuo</a>
+          <a href="#noetix" data-i18n="nav_noetix">Noetix</a>
           <a href="https://leo-haochen-liu.github.io/haochenliu-portfolio/assets/resume_haochen_liu.pdf" data-i18n="nav_resume">Resume</a>
           <button type="button" id="lang-toggle" class="lang-toggle">中文</button>
         </div>
@@ -23,7 +23,8 @@
       <section id="top" class="hero-panel">
         <div class="hero-copy">
           <p class="eyebrow" data-i18n="hero_eyebrow">Haochen Liu</p>
-          <h1 data-i18n="hero_title">Industrial design for embodied products, from full-size humanoids to interactive bionic companions.</h1>
+          <h1 data-i18n="hero_title">Robotics Industrial Design</h1>
+          <p class="hero-subtitle" data-i18n="hero_subtitle">Embodied products, interaction, and physical presence.</p>
           <p class="lede" data-i18n="hero_lede">
             This portfolio highlights two robotics projects with different scales and interaction goals. For DeepCybo
             Prime at DeepCybo, I drove the industrial design of a full-size humanoid robot from overall form language
@@ -53,28 +54,13 @@
         </div>
 
         <div class="hero-stage">
-            <figure class="hero-main-frame lightbox-item">
-              <img
-                src="./assets/deepcybo-live/21f5f415ac7cda9c53f394b8d2d33e91.JPG"
-                alt="DeepCybo Prime exhibited as a finished full-size humanoid robot"
-              />
-            </figure>
-          <div class="hero-side-stack">
-            <figure class="hero-side-card lightbox-item">
-              <img
-                src="./assets/noetix/MEITU_20250514_212143991.jpg"
-                alt="Noetix Xiao Nuo interactive bionic robot"
-              />
-              <figcaption data-i18n="hero_side_caption_photo">Noetix Xiao Nuo interactive robot</figcaption>
-            </figure>
-            <figure class="hero-side-card lightbox-item">
-              <img
-                src="./assets/deepcybo-live/IMG_6082.jpg"
-                alt="Haochen Liu with the DeepCybo humanoid robot in the lab"
-              />
-              <figcaption data-i18n="hero_side_caption_video">Designer portrait with DeepCybo robot</figcaption>
-            </figure>
-          </div>
+          <figure class="hero-carousel lightbox-item" id="hero-carousel">
+            <img id="hero-carousel-image" src="./assets/deepcybo-live/21f5f415ac7cda9c53f394b8d2d33e91.JPG" alt="DeepCybo Prime exhibited as a finished full-size humanoid robot" />
+            <button type="button" class="carousel-control carousel-prev" id="hero-prev" aria-label="Previous slide">‹</button>
+            <button type="button" class="carousel-control carousel-next" id="hero-next" aria-label="Next slide">›</button>
+            <figcaption id="hero-carousel-caption" data-i18n="hero_slide_1">DeepCybo Prime exhibited as a finished full-size humanoid robot.</figcaption>
+            <div class="carousel-dots" id="hero-dots" aria-hidden="true"></div>
+          </figure>
         </div>
       </section>
     </header>
@@ -335,28 +321,31 @@
           hero_button_project: "View DeepCybo",
           hero_button_noetix: "View Noetix",
           hero_button_resume: "View Resume",
+          hero_subtitle: "Embodied products, interaction, and physical presence.",
           fact_role_label: "Focus",
           fact_role_value: "Robotics Industrial Design",
           fact_timeline_label: "Projects",
           fact_timeline_value: "DeepCybo + Noetix",
           fact_focus_label: "Keywords",
           fact_focus_value: "Embodiment, Interaction, CMF, CAD",
-          hero_side_caption_photo: "Noetix Xiao Nuo interactive robot",
-          hero_side_caption_video: "Designer portrait with DeepCybo robot",
+          hero_slide_1: "DeepCybo Prime exhibited as a finished full-size humanoid robot.",
+          hero_slide_2: "Studio portrait of DeepCybo Prime with a calm, resolved body silhouette.",
+          hero_slide_3: "Noetix Xiao Nuo shown as an interactive humanoid product.",
+          hero_slide_4: "Hobbs 3.0 carrying the same torso and neck design language.",
           overview_1_kicker: "Portfolio Scope",
           overview_1_title: "Two robotics product stories",
           overview_1_body:
             "This site is organized as a personal portfolio rather than a single case study. It brings together two projects with different goals: one full-size humanoid platform and one interactive bionic product.",
           overview_2_kicker: "Project 01",
-          overview_2_title: "DeepCybo / 深度机智",
+          overview_2_title: "DeepCybo",
           overview_2_body:
             "A full-size humanoid robot where I handled form language, surfacing, CMF direction, packaging logic, and the path from presentation imagery to final built presence.",
           overview_3_kicker: "Project 02",
-          overview_3_title: "Noetix / 松延动力",
+          overview_3_title: "Noetix",
           overview_3_body:
             "An interactive bionic robot product centered on face perception, upper-body identity, and screen-supported emotional interaction for public-facing communication scenarios.",
           project_header_kicker: "Project 01",
-          project_header_title: "DeepCybo Prime, DeepCybo / 深度机智",
+          project_header_title: "DeepCybo Prime, DeepCybo",
           project_header_body:
             "A full-size humanoid robot project completed with DeepCybo, focused on turning a strong visual identity into a buildable machine with coherent proportions, shell logic, and final public presence.",
           meta_1_label: "Deliverables",
@@ -391,7 +380,7 @@
           chapter_5_body:
             "The motion clips and exhibition moments help show the robot as an embodied system in public-facing use rather than only a set of still images.",
           noetix_header_kicker: "Project 02",
-          noetix_header_title: "Noetix robotics product family / 松延动力",
+          noetix_header_title: "Noetix robotics product family",
           noetix_header_body:
             "At Noetix Robotics, I worked on the upper-body industrial design language shared across multiple bionic and interactive robot products. This section includes Xiao Nuo as an interactive humanoid communication product and Hobbs 3.0 as a producible bionic service robot, both carrying forward the torso and neck design system I developed.",
           noetix_meta_1_label: "Scope",
@@ -421,6 +410,7 @@
           nav_resume: "简历",
           hero_eyebrow: "Haochen Liu",
           hero_title: "面向具身产品的工业设计：从全尺寸人形机器人到可交互的仿生机器人产品。",
+          hero_subtitle: "具身产品、交互体验与实体存在感。",
           hero_lede:
             "这个网站是我的个人作品集，而不是只讲一个项目。这里收录了两个不同尺度、不同交互目标的机器人项目：一是深度机智的 DeepCybo Prime，全尺寸人形机器人，重点在整体造型、结构包装和最终落地；二是松延动力的小诺，一个面向真实交流场景的可交互仿生机器人产品，重点在上半身产品形象、屏幕沟通和情感化呈现。",
           hero_button_project: "查看 DeepCybo",
@@ -432,8 +422,10 @@
           fact_timeline_value: "深度机智 + 松延动力",
           fact_focus_label: "关键词",
           fact_focus_value: "具身、交互、CMF、CAD",
-          hero_side_caption_photo: "松延动力 小诺交互机器人",
-          hero_side_caption_video: "我与 DeepCybo 机器人的合影",
+          hero_slide_1: "DeepCybo Prime 作为最终全尺寸人形机器人的公开展示状态。",
+          hero_slide_2: "DeepCybo Prime 的干净棚拍，展示更完整的体量与轮廓。",
+          hero_slide_3: "松延动力小诺作为交互型人形产品的实体状态。",
+          hero_slide_4: "Hobbs 3.0，沿用了同一套躯干与脖子设计语言。",
           overview_1_kicker: "作品集范围",
           overview_1_title: "两个机器人产品故事",
           overview_1_body:
@@ -573,6 +565,31 @@
         { base: noetixBase, file: "hobbs_3_portrait.png", type: "image", caption: { en: "Hobbs 3.0 portrait view with the chest screen and upper-body system clearly visible.", zh: "Hobbs 3.0 正面视角，清晰展示胸前屏幕与上半身系统。" } }
       ];
 
+      const heroSlides = [
+        {
+          src: "./assets/deepcybo-live/21f5f415ac7cda9c53f394b8d2d33e91.JPG",
+          alt: { en: "DeepCybo Prime exhibited as a finished full-size humanoid robot", zh: "DeepCybo Prime 作为最终全尺寸人形机器人的公开展示状态" },
+          captionKey: "hero_slide_1"
+        },
+        {
+          src: "./assets/deepcybo-live/3bfb41be84f6a3796fc94d0b130a5055.jpg",
+          alt: { en: "Studio portrait of DeepCybo Prime", zh: "DeepCybo Prime 的棚拍视角" },
+          captionKey: "hero_slide_2"
+        },
+        {
+          src: "./assets/noetix/MEITU_20250514_212143991.jpg",
+          alt: { en: "Noetix Xiao Nuo interactive humanoid product", zh: "松延动力小诺交互型人形产品" },
+          captionKey: "hero_slide_3"
+        },
+        {
+          src: "./assets/noetix/hobbs_3_portrait.png",
+          alt: { en: "Hobbs 3.0 robotic product portrait", zh: "Hobbs 3.0 机器人产品肖像" },
+          captionKey: "hero_slide_4"
+        }
+      ];
+      let heroIndex = 0;
+      let heroTimer = null;
+
       function t(key) {
         return translations[currentLang][key] || translations.en[key] || "";
       }
@@ -635,8 +652,37 @@
         document.getElementById("lang-toggle").textContent = currentLang === "en" ? "中文" : "EN";
       }
 
+      function renderHeroCarousel() {
+        const slide = heroSlides[heroIndex];
+        const image = document.getElementById("hero-carousel-image");
+        const caption = document.getElementById("hero-carousel-caption");
+        const dots = document.getElementById("hero-dots");
+
+        image.src = slide.src;
+        image.alt = localize(slide.alt);
+        caption.textContent = t(slide.captionKey);
+
+        dots.innerHTML = "";
+        heroSlides.forEach((_, index) => {
+          const dot = document.createElement("span");
+          dot.className = `carousel-dot${index === heroIndex ? " is-active" : ""}`;
+          dots.appendChild(dot);
+        });
+      }
+
+      function setHeroSlide(index) {
+        heroIndex = (index + heroSlides.length) % heroSlides.length;
+        renderHeroCarousel();
+      }
+
+      function startHeroCarousel() {
+        if (heroTimer) clearInterval(heroTimer);
+        heroTimer = window.setInterval(() => setHeroSlide(heroIndex + 1), 4500);
+      }
+
       function renderAll() {
         applyStaticTranslations();
+        renderHeroCarousel();
         renderGrid("final-prototype-grid", finalPrototypeItems);
         renderGrid("design-development-grid", designDevelopmentItems);
         renderGrid("render-grid", renderItems);
@@ -712,6 +758,20 @@
         currentLang = currentLang === "en" ? "zh" : "en";
         renderAll();
       });
+
+      document.getElementById("hero-prev").addEventListener("click", (event) => {
+        event.stopPropagation();
+        setHeroSlide(heroIndex - 1);
+        startHeroCarousel();
+      });
+
+      document.getElementById("hero-next").addEventListener("click", (event) => {
+        event.stopPropagation();
+        setHeroSlide(heroIndex + 1);
+        startHeroCarousel();
+      });
+
+      startHeroCarousel();
     </script>
   </body>
 </html>
