@@ -82,6 +82,7 @@ video {
   display: flex;
   flex-wrap: wrap;
   gap: 18px;
+  align-items: center;
 }
 
 .nav-links a,
@@ -96,6 +97,22 @@ video {
 .footer-links a:hover,
 .meta-card a:hover {
   color: var(--text);
+}
+
+.lang-toggle {
+  min-height: 34px;
+  padding: 0 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong);
+  background: rgba(9, 18, 30, 0.72);
+  color: var(--accent);
+  cursor: pointer;
+  font: inherit;
+}
+
+.lang-toggle:hover {
+  color: var(--text);
+  border-color: rgba(126, 180, 255, 0.48);
 }
 
 .hero-panel,
