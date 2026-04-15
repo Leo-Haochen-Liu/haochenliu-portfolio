@@ -575,9 +575,6 @@
           figure.appendChild(img);
         }
 
-        const caption = document.createElement("figcaption");
-        caption.textContent = localize(item.caption) || item.file;
-        figure.appendChild(caption);
         return figure;
       }
 
@@ -625,7 +622,7 @@
 
       function openLightbox(node) {
         const media = node.querySelector("img, video");
-        const caption = node.querySelector("figcaption")?.textContent || media?.alt || "";
+        const caption = media?.alt || "";
         if (!media) return;
 
         lightboxStage.innerHTML = "";
