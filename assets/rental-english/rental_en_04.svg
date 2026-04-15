@@ -1,0 +1,27 @@
+<svg width="1600" height="1100" viewBox="0 0 1600 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1100" fill="#07111D"/>
+  <rect x="72" y="72" width="1456" height="956" rx="36" fill="#0B1726" stroke="#2D4865"/>
+  <text x="124" y="170" fill="#81D8FF" font-size="28" font-family="Arial" letter-spacing="7">INTERFACE CONCEPT</text>
+  <text x="124" y="262" fill="#EEF4FF" font-size="64" font-family="Arial" font-weight="700">A cleaner product story for renters and owners</text>
+
+  <rect x="138" y="350" width="420" height="560" rx="42" fill="#08111C" stroke="#35567A" stroke-width="3"/>
+  <rect x="172" y="420" width="352" height="168" rx="26" fill="#102134"/>
+  <text x="200" y="480" fill="#EEF4FF" font-size="32" font-family="Arial" font-weight="700">Sony A7M4 Camera</text>
+  <text x="200" y="524" fill="#9AAFC7" font-size="24" font-family="Arial">Verified condition • Inspected by platform</text>
+  <rect x="172" y="626" width="352" height="74" rx="18" fill="#0E1E31"/>
+  <text x="200" y="672" fill="#60F0D2" font-size="24" font-family="Arial">Daily rental fee</text>
+  <text x="408" y="672" fill="#EEF4FF" font-size="28" font-family="Arial" font-weight="700">$29</text>
+  <rect x="172" y="724" width="352" height="120" rx="22" fill="#0E1E31"/>
+  <text x="200" y="776" fill="#9AAFC7" font-size="24" font-family="Arial">Pickup verification, return check, and</text>
+  <text x="200" y="812" fill="#9AAFC7" font-size="24" font-family="Arial">deposit protection shown before checkout.</text>
+
+  <rect x="654" y="350" width="760" height="246" rx="28" fill="#0E1E31" stroke="#2D4865"/>
+  <text x="694" y="412" fill="#60F0D2" font-size="24" font-family="Arial" letter-spacing="4">VALUE FOR RENTERS</text>
+  <text x="694" y="478" fill="#EEF4FF" font-size="34" font-family="Arial" font-weight="700">Access high-value devices only when needed</text>
+  <text x="694" y="536" fill="#9AAFC7" font-size="28" font-family="Arial">Lower upfront commitment, clearer condition guarantees, and simpler decision making.</text>
+
+  <rect x="654" y="638" width="760" height="246" rx="28" fill="#0E1E31" stroke="#2D4865"/>
+  <text x="694" y="700" fill="#60F0D2" font-size="24" font-family="Arial" letter-spacing="4">VALUE FOR OWNERS</text>
+  <text x="694" y="766" fill="#EEF4FF" font-size="34" font-family="Arial" font-weight="700">Turn dormant products into recurring value</text>
+  <text x="694" y="824" fill="#9AAFC7" font-size="28" font-family="Arial">The platform helps convert idle inventory into temporary revenue without immediate resale.</text>
+</svg>

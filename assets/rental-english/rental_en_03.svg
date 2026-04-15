@@ -1,0 +1,38 @@
+<svg width="1600" height="1100" viewBox="0 0 1600 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1100" fill="#07111D"/>
+  <rect x="72" y="72" width="1456" height="956" rx="36" fill="#0B1726" stroke="#2D4865"/>
+  <text x="124" y="170" fill="#81D8FF" font-size="28" font-family="Arial" letter-spacing="7">TRUST SYSTEM DESIGN</text>
+  <text x="124" y="262" fill="#EEF4FF" font-size="64" font-family="Arial" font-weight="700">The service is the product</text>
+
+  <rect x="124" y="350" width="1260" height="200" rx="28" fill="#0E1E31" stroke="#2D4865"/>
+  <circle cx="214" cy="450" r="36" fill="#82D6FF"/>
+  <circle cx="530" cy="450" r="36" fill="#82D6FF"/>
+  <circle cx="846" cy="450" r="36" fill="#82D6FF"/>
+  <circle cx="1162" cy="450" r="36" fill="#82D6FF"/>
+  <path d="M250 450H494" stroke="#60F0D2" stroke-width="6" stroke-linecap="round"/>
+  <path d="M566 450H810" stroke="#60F0D2" stroke-width="6" stroke-linecap="round"/>
+  <path d="M882 450H1126" stroke="#60F0D2" stroke-width="6" stroke-linecap="round"/>
+  <text x="188" y="458" fill="#04111B" font-size="28" font-family="Arial" font-weight="700">1</text>
+  <text x="504" y="458" fill="#04111B" font-size="28" font-family="Arial" font-weight="700">2</text>
+  <text x="820" y="458" fill="#04111B" font-size="28" font-family="Arial" font-weight="700">3</text>
+  <text x="1136" y="458" fill="#04111B" font-size="28" font-family="Arial" font-weight="700">4</text>
+  <text x="158" y="514" fill="#EEF4FF" font-size="26" font-family="Arial">Owner submits item</text>
+  <text x="460" y="514" fill="#EEF4FF" font-size="26" font-family="Arial">Platform verifies condition</text>
+  <text x="804" y="514" fill="#EEF4FF" font-size="26" font-family="Arial">Renter books with deposit</text>
+  <text x="1086" y="514" fill="#EEF4FF" font-size="26" font-family="Arial">Return and re-inspection</text>
+
+  <rect x="124" y="614" width="396" height="270" rx="28" fill="#0E1E31" stroke="#2D4865"/>
+  <text x="160" y="678" fill="#60F0D2" font-size="24" font-family="Arial" letter-spacing="4">TRUST LAYER 1</text>
+  <text x="160" y="740" fill="#EEF4FF" font-size="34" font-family="Arial" font-weight="700">Condition evidence</text>
+  <text x="160" y="796" fill="#9AAFC7" font-size="26" font-family="Arial">The platform records equipment status before and after each rental.</text>
+
+  <rect x="602" y="614" width="396" height="270" rx="28" fill="#0E1E31" stroke="#2D4865"/>
+  <text x="638" y="678" fill="#60F0D2" font-size="24" font-family="Arial" letter-spacing="4">TRUST LAYER 2</text>
+  <text x="638" y="740" fill="#EEF4FF" font-size="34" font-family="Arial" font-weight="700">Managed custody</text>
+  <text x="638" y="796" fill="#9AAFC7" font-size="26" font-family="Arial">Inspection and handoff reduce uncertainty in direct peer exchange.</text>
+
+  <rect x="1080" y="614" width="304" height="270" rx="28" fill="#0E1E31" stroke="#2D4865"/>
+  <text x="1116" y="678" fill="#60F0D2" font-size="24" font-family="Arial" letter-spacing="4">OUTCOME</text>
+  <text x="1116" y="740" fill="#EEF4FF" font-size="34" font-family="Arial" font-weight="700">Higher confidence</text>
+  <text x="1116" y="796" fill="#9AAFC7" font-size="26" font-family="Arial">Trust becomes visible instead of assumed.</text>
+</svg>

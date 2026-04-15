@@ -1,0 +1,27 @@
+<svg width="1600" height="1100" viewBox="0 0 1600 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1100" fill="#07111D"/>
+  <rect x="72" y="72" width="1456" height="956" rx="36" fill="#0B1726" stroke="#2D4865"/>
+  <text x="124" y="170" fill="#81D8FF" font-size="28" font-family="Arial" letter-spacing="7">RESEARCH AND MARKET SIGNAL</text>
+  <text x="124" y="262" fill="#EEF4FF" font-size="64" font-family="Arial" font-weight="700">Why this service could exist</text>
+
+  <rect x="124" y="332" width="650" height="590" rx="28" fill="#0E1E31" stroke="#2D4865"/>
+  <text x="164" y="394" fill="#60F0D2" font-size="24" font-family="Arial" letter-spacing="4">USER OBSERVATION</text>
+  <text x="164" y="456" fill="#EEF4FF" font-size="34" font-family="Arial" font-weight="700">People keep expensive products they rarely use</text>
+  <text x="164" y="516" fill="#9AAFC7" font-size="28" font-family="Arial">Examples include cameras, projectors, drones, VR devices,</text>
+  <text x="164" y="556" fill="#9AAFC7" font-size="28" font-family="Arial">and specialty electronics purchased for occasional scenarios.</text>
+  <text x="164" y="646" fill="#EEF4FF" font-size="34" font-family="Arial" font-weight="700">Many owners do not want to sell outright</text>
+  <text x="164" y="706" fill="#9AAFC7" font-size="28" font-family="Arial">Emotional attachment, future uncertainty, and depreciation</text>
+  <text x="164" y="746" fill="#9AAFC7" font-size="28" font-family="Arial">make resale feel less attractive than temporary monetization.</text>
+
+  <rect x="828" y="332" width="576" height="274" rx="28" fill="#0E1E31" stroke="#2D4865"/>
+  <text x="866" y="394" fill="#60F0D2" font-size="24" font-family="Arial" letter-spacing="4">QUESTIONNAIRE TAKEAWAYS</text>
+  <text x="866" y="470" fill="#EEF4FF" font-size="78" font-family="Arial" font-weight="700">High interest</text>
+  <text x="866" y="530" fill="#9AAFC7" font-size="28" font-family="Arial">Users showed openness to renting items for short-term needs</text>
+  <text x="866" y="566" fill="#9AAFC7" font-size="28" font-family="Arial">if trust, quality, and accountability were clearly protected.</text>
+
+  <rect x="828" y="648" width="576" height="274" rx="28" fill="#0E1E31" stroke="#2D4865"/>
+  <text x="866" y="710" fill="#60F0D2" font-size="24" font-family="Arial" letter-spacing="4">KEY BARRIERS</text>
+  <text x="866" y="786" fill="#EEF4FF" font-size="34" font-family="Arial" font-weight="700">Damage disputes, fake condition claims, weak platform trust</text>
+  <text x="866" y="848" fill="#9AAFC7" font-size="28" font-family="Arial">The product opportunity is not only supply and demand matching.</text>
+  <text x="866" y="888" fill="#9AAFC7" font-size="28" font-family="Arial">It is the service design layer that makes renting feel credible.</text>
+</svg>
