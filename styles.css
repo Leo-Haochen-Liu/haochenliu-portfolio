@@ -180,9 +180,9 @@ figure {
 
 h1 {
   margin-bottom: 10px;
-  font-size: clamp(2.8rem, 4.4vw, 4.8rem);
-  line-height: 0.96;
-  max-width: 9ch;
+  font-size: clamp(3rem, 4.8vw, 5.1rem);
+  line-height: 0.92;
+  max-width: 7ch;
 }
 
 h2 {
@@ -208,9 +208,9 @@ h3 {
 }
 
 .hero-subtitle {
-  margin: 0 0 18px;
-  max-width: 28rem;
-  font-size: 1.08rem;
+  margin: 0 0 22px;
+  max-width: 32rem;
+  font-size: 1.02rem;
 }
 
 .hero-actions {
@@ -291,6 +291,7 @@ h3 {
   width: 100%;
   height: auto;
   object-fit: contain;
+  border-radius: 14px;
 }
 
 .media-card img,
@@ -307,7 +308,6 @@ h3 {
   height: auto;
 }
 
-.hero-single figcaption,
 .media-card figcaption,
 .archive-card figcaption {
   padding: 12px 14px 14px;
