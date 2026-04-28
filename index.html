@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Haochen Liu | Industrial Design Portfolio</title>
+    <title>Haochen Liu | Personal Website</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
@@ -13,22 +13,28 @@
       <nav class="topbar">
         <a class="brand" href="#top">Haochen Liu</a>
         <div class="nav-links">
+          <a href="#about" data-i18n="nav_about">About</a>
           <a href="#deepcybo" data-i18n="nav_project">DeepCybo Prime</a>
           <a href="#noetix" data-i18n="nav_noetix">Noetix</a>
           <a href="https://leo-haochen-liu.github.io/haochenliu-portfolio/assets/resume_haochen_liu.pdf" data-i18n="nav_resume">Resume</a>
+          <a href="https://leo-haochen-liu.github.io/haochenliu-portfolio/assets/portfolio-Haochen%20Liu.pdf" data-i18n="nav_portfolio_pdf">Portfolio PDF</a>
           <button type="button" id="lang-toggle" class="lang-toggle">中文</button>
         </div>
       </nav>
 
       <section id="top" class="hero-panel">
         <div class="hero-copy">
-          <p class="eyebrow" data-i18n="hero_eyebrow">Haochen Liu</p>
-          <h1 data-i18n="hero_title">Robotics Design</h1>
+          <p id="about" class="eyebrow" data-i18n="hero_eyebrow">About</p>
+          <h1 data-i18n="hero_title">Haochen Liu</h1>
           <p class="hero-subtitle" data-i18n="hero_subtitle">Industrial design for humanoids, bionic products, and embodied interaction.</p>
+          <p class="lede" data-i18n="hero_lede">
+            Haochen Liu is a robotics industrial designer based between Ann Arbor and Beijing. His work connects product form, embodied interaction, and engineering-aware execution across humanoid robots, biomimetic products, and intelligent physical systems.
+          </p>
           <div class="hero-actions">
-            <a class="button button-primary" href="#deepcybo" data-i18n="hero_button_project">View DeepCybo</a>
+            <a class="button button-primary" href="#selected-work" data-i18n="hero_button_project">View Selected Work</a>
             <a class="button button-secondary" href="#noetix" data-i18n="hero_button_noetix">View Noetix</a>
             <a class="button button-secondary" href="https://leo-haochen-liu.github.io/haochenliu-portfolio/assets/resume_haochen_liu.pdf" data-i18n="hero_button_resume">View Resume</a>
+            <a class="button button-secondary" href="https://leo-haochen-liu.github.io/haochenliu-portfolio/assets/portfolio-Haochen%20Liu.pdf" data-i18n="hero_button_portfolio_pdf">View Portfolio PDF</a>
           </div>
           <div class="hero-facts">
             <div>
@@ -36,48 +42,61 @@
               <strong data-i18n="fact_role_value">Robotics Industrial Design</strong>
             </div>
             <div>
-              <span class="fact-label" data-i18n="fact_timeline_label">Projects</span>
-              <strong data-i18n="fact_timeline_value">DeepCybo + Noetix</strong>
+              <span class="fact-label" data-i18n="fact_timeline_label">Based In</span>
+              <strong data-i18n="fact_timeline_value">Ann Arbor + Beijing</strong>
             </div>
             <div>
-              <span class="fact-label" data-i18n="fact_focus_label">Keywords</span>
-              <strong data-i18n="fact_focus_value">Embodiment, Interaction, CMF, CAD</strong>
+              <span class="fact-label" data-i18n="fact_focus_label">Education</span>
+              <strong data-i18n="fact_focus_value">Michigan SI + Tsinghua AAD</strong>
             </div>
           </div>
         </div>
 
         <div class="hero-stage">
-          <figure class="hero-single lightbox-item">
-            <img src="./assets/deepcybo/wallpaper.jpg" alt="DeepCybo Prime hero image" />
+          <figure class="hero-single hero-portrait lightbox-item">
+            <img src="./assets/photo.JPG" alt="Portrait of Haochen Liu" />
           </figure>
+          <div class="hero-sidecards">
+            <article class="hero-sidecard">
+              <p class="card-kicker" data-i18n="intro_card_1_kicker">Current</p>
+              <h2 data-i18n="intro_card_1_title">M.S. in Information, University of Michigan</h2>
+              <p data-i18n="intro_card_1_body">
+                Currently studying Big Data Analytics at the University of Michigan School of Information while continuing to build a design practice around robotics, AI products, and human-centered systems.
+              </p>
+            </article>
+            <article class="hero-sidecard">
+              <p class="card-kicker" data-i18n="intro_card_2_kicker">Background</p>
+              <h2 data-i18n="intro_card_2_title">Industrial design grounded in product execution</h2>
+              <p data-i18n="intro_card_2_body">
+                Trained at Tsinghua University Academy of Arts & Design, with experience spanning humanoid robot design, biomimetic product development, automotive interior design, and data-informed product work.
+              </p>
+            </article>
+          </div>
         </div>
       </section>
     </header>
 
     <main class="site-shell main-content">
-      <section class="overview-strip">
+      <section id="selected-work" class="overview-strip">
         <article class="overview-card">
-          <p class="card-kicker" data-i18n="overview_1_kicker">Portfolio Scope</p>
-          <h2 data-i18n="overview_1_title">Two robotics product stories</h2>
+          <p class="card-kicker" data-i18n="overview_1_kicker">Profile</p>
+          <h2 data-i18n="overview_1_title">Personal website for robotics design</h2>
           <p data-i18n="overview_1_body">
-            This site is organized as a personal portfolio rather than a single case study. It brings together two
-            projects with different goals: one full-size humanoid platform and one interactive bionic product.
+            This website presents Haochen Liu's background, design perspective, and selected robotics projects. It highlights product thinking across form development, CAD surfacing, CMF direction, and engineering collaboration.
           </p>
         </article>
         <article class="overview-card">
-          <p class="card-kicker" data-i18n="overview_2_kicker">Project 01</p>
-          <h2 data-i18n="overview_2_title">DeepCybo / 深度机智</h2>
+          <p class="card-kicker" data-i18n="overview_2_kicker">Education</p>
+          <h2 data-i18n="overview_2_title">University of Michigan + Tsinghua University</h2>
           <p data-i18n="overview_2_body">
-            A full-size humanoid robot where I handled form language, surfacing, CMF direction, packaging logic, and
-            the path from presentation imagery to final built presence.
+            Haochen is pursuing an M.S. in Information at the University of Michigan and previously earned a B.A. from the Academy of Arts & Design at Tsinghua University, with a minor in Product Design.
           </p>
         </article>
         <article class="overview-card">
-          <p class="card-kicker" data-i18n="overview_3_kicker">Project 02</p>
-          <h2 data-i18n="overview_3_title">Noetix / 松延动力</h2>
+          <p class="card-kicker" data-i18n="overview_3_kicker">Selected Work</p>
+          <h2 data-i18n="overview_3_title">Humanoids, biomimetic products, and intelligent systems</h2>
           <p data-i18n="overview_3_body">
-            An interactive bionic robot product centered on face perception, upper-body identity, and screen-supported
-            emotional interaction for public-facing communication scenarios.
+            Featured work includes DeepCybo Prime, Xiao Nuo, and Hobbs 3.0, with responsibilities covering overall form language, upper-body identity, digital presentation assets, and build-aware design integration.
           </p>
         </article>
       </section>
@@ -87,8 +106,9 @@
           <p class="section-kicker" data-i18n="project_header_kicker">Project 01</p>
           <h2 data-i18n="project_header_title">DeepCybo Prime, DeepCybo / 深度机智</h2>
           <p class="section-summary" data-i18n="project_header_body">
-            A full-size humanoid robot project completed with DeepCybo, focused on turning a strong visual identity
-            into a buildable machine with coherent proportions, shell logic, and final public presence.
+            DeepCybo Prime is a full-size humanoid robot project completed with DeepCybo. I led the industrial design
+            across form language, shell logic, packaging-aware surfacing, and the translation from visual concept to
+            final public-facing prototype.
           </p>
         </div>
         <div class="meta-grid">
@@ -108,9 +128,8 @@
           <p class="section-kicker">01</p>
           <h3 data-i18n="chapter_1_title">Final physical photos</h3>
           <p data-i18n="chapter_1_body">
-            This section follows the exact folder structure from my project archive. It gathers the clean real-world
-            photography of the finished robot, including studio-style views, direct detail shots, and close-ups of the
-            final build.
+            This section gathers real-world photography of the finished robot, including studio-style views, direct
+            detail shots, and close-ups of the final build.
           </p>
         </div>
         <div id="final-prototype-grid" class="media-grid media-grid-featured"></div>
@@ -136,9 +155,9 @@
         <aside class="note-panel">
           <p class="note-kicker" data-i18n="jpcl_note_kicker">Why it matters</p>
           <p data-i18n="jpcl_note_body">
-            This moment shows that the visual identity of the robot held up not only in product renders and exhibition
-            settings, but also as part of a polished scientific publication image. It is a strong signal of the
-            project's communicative quality and cultural reach.
+            This moment shows the robot's visual identity performing strongly across product renders, exhibition
+            settings, and polished scientific publication imagery. It is a strong signal of the project's
+            communicative quality and cultural reach.
           </p>
         </aside>
       </section>
@@ -148,8 +167,8 @@
           <p class="section-kicker">02</p>
           <h3 data-i18n="chapter_2_title">Early concept design</h3>
           <p data-i18n="chapter_2_body">
-            This group comes directly from the `初期概念设计` folder and shows the earlier visual exploration stage:
-            presentation renders, perspective studies, and concept images used before the final direction was locked.
+            This group shows the early visual exploration stage, including presentation renders, perspective studies,
+            and concept images developed before the final direction was locked.
           </p>
         </div>
         <div id="design-development-grid" class="media-grid"></div>
@@ -160,8 +179,8 @@
           <p class="section-kicker">03</p>
           <h3 data-i18n="chapter_3_title">3D model</h3>
           <p data-i18n="chapter_3_body">
-            This group follows the `3D-Model` folder and focuses on surfaced CAD, packaging-aware development, and the
-            transition from concept images into buildable geometry.
+            This group focuses on surfaced CAD, packaging-aware development, and the transition from concept images
+            into buildable geometry.
           </p>
         </div>
         <div id="render-grid" class="media-grid"></div>
@@ -173,8 +192,8 @@
             <p class="section-kicker">04</p>
             <h3 data-i18n="chapter_4_title">Photos with people</h3>
             <p data-i18n="chapter_4_body">
-              This section follows the `与人合影` folder and shows DeepCybo Prime in exhibition, interview, and lab
-              contexts. It includes team moments, public-facing scenes, and portraits with the robot.
+              This section shows DeepCybo Prime in exhibition, interview, and lab contexts. It includes team moments,
+              public-facing scenes, and portraits with the robot.
             </p>
           </div>
           <div id="packaging-grid" class="media-grid"></div>
@@ -182,8 +201,7 @@
         <aside class="note-panel">
           <p class="note-kicker" data-i18n="chapter_4_note_kicker">Design note</p>
           <p data-i18n="chapter_4_note_body">
-            Using the same directory structure on the website makes the project archive more faithful to the way I
-            actually organized the work during development.
+            These photos show how the robot carried its visual identity across studio, exhibition, and team settings.
           </p>
         </aside>
       </section>
@@ -204,10 +222,10 @@
           <p class="section-kicker" data-i18n="noetix_header_kicker">Project 02</p>
           <h2 data-i18n="noetix_header_title">Noetix robotics product family / 松延动力</h2>
           <p class="section-summary" data-i18n="noetix_header_body">
-            At Noetix Robotics, I worked on the upper-body industrial design language shared across multiple bionic and
+            At Noetix Robotics, I worked on an upper-body industrial design language shared across multiple bionic and
             interactive robot products. This section includes Xiao Nuo as an interactive humanoid communication product
-            and Hobbs 3.0 as a producible bionic service robot, both carrying forward the torso and neck design system
-            I developed.
+            and Hobbs 3.0 as a producible bionic service robot, both built from the torso and neck design system I
+            developed.
           </p>
         </div>
         <div class="meta-grid">
@@ -228,10 +246,9 @@
             <p class="section-kicker">06</p>
             <h3 data-i18n="noetix_title">Xiao Nuo, interactive humanoid communication product</h3>
             <p data-i18n="noetix_body">
-              Xiao Nuo is not just a form study. It is a real interactive product used for face-to-face communication,
-              public demonstration, and emotionally expressive interaction. These images combine surfaced CAD,
-              prototype photography, and public event scenes to show how the upper-body design supports friendliness,
-              readability, and presence.
+              Xiao Nuo is an interactive product used for face-to-face communication, public demonstration, and
+              emotionally expressive interaction. These images combine surfaced CAD, prototype photography, and public
+              event scenes to show how the upper-body design supports friendliness, readability, and presence.
             </p>
           </div>
           <div id="noetix-grid" class="media-grid"></div>
@@ -262,9 +279,9 @@
         <aside class="note-panel">
           <p class="note-kicker" data-i18n="hobbs_note_kicker">Shared design language</p>
           <p data-i18n="hobbs_note_body">
-            Even though Hobbs 3.0 is not Xiao Nuo, it still carries the torso and neck system I designed. Including it
-            here makes the Noetix section more accurate: it shows how one upper-body design language can scale across
-            multiple interactive robot products with different faces, scenarios, and public roles.
+            Hobbs 3.0 carries the same torso and neck system I designed. Including it here shows how one upper-body
+            design language can scale across multiple interactive robot products with different faces, scenarios, and
+            public roles.
           </p>
         </aside>
       </section>
@@ -280,6 +297,7 @@
         <a href="mailto:liuhaoch@umich.edu">liuhaoch@umich.edu</a>
         <a href="https://www.linkedin.com/in/haochen-liu">LinkedIn</a>
         <a href="https://leo-haochen-liu.github.io/haochenliu-portfolio/assets/resume_haochen_liu.pdf" data-i18n="footer_resume">Resume PDF</a>
+        <a href="https://leo-haochen-liu.github.io/haochenliu-portfolio/assets/portfolio-Haochen%20Liu.pdf" data-i18n="footer_portfolio_pdf">Portfolio PDF</a>
       </div>
     </footer>
 
@@ -295,48 +313,59 @@
 
       const translations = {
         en: {
-          page_title: "Haochen Liu | Industrial Design Portfolio",
+          page_title: "Haochen Liu | Personal Website",
+          nav_about: "About",
           nav_project: "DeepCybo Prime",
           nav_noetix: "Noetix",
           nav_resume: "Resume",
-          hero_eyebrow: "Haochen Liu",
-          hero_title: "Robotics Design",
+          nav_portfolio_pdf: "Portfolio PDF",
+          hero_eyebrow: "About",
+          hero_title: "Haochen Liu",
           hero_lede:
-            "This portfolio highlights two robotics projects with different scales and interaction goals. For DeepCybo Prime at DeepCybo, I drove the industrial design of a full-size humanoid robot from overall form language through packaging-aware 3D realization. For Xiao Nuo at Noetix Robotics, I designed the upper-body product expression of an interactive bionic robot focused on lifelike presence, screen-based communication, and human-facing emotional interaction.",
-          hero_button_project: "View DeepCybo",
+            "Haochen Liu is a robotics industrial designer based between Ann Arbor and Beijing. His work connects product form, embodied interaction, and engineering-aware execution across humanoid robots, biomimetic products, and intelligent physical systems.",
+          hero_button_project: "View Selected Work",
           hero_button_noetix: "View Noetix",
           hero_button_resume: "View Resume",
-          hero_subtitle: "Industrial design for humanoids, bionic products, and embodied interaction.",
+          hero_button_portfolio_pdf: "View Portfolio PDF",
+          hero_subtitle: "Robotics industrial designer focused on humanoids, biomimetic products, and embodied interaction.",
           fact_role_label: "Focus",
           fact_role_value: "Robotics Industrial Design",
-          fact_timeline_label: "Projects",
-          fact_timeline_value: "DeepCybo + Noetix",
-          fact_focus_label: "Keywords",
-          fact_focus_value: "Embodiment, Interaction, CMF, CAD",
-          hero_slide_1: "DeepCybo Prime hero image.",
-          overview_1_kicker: "Portfolio Scope",
-          overview_1_title: "Two robotics product stories",
+          fact_timeline_label: "Based In",
+          fact_timeline_value: "Ann Arbor + Beijing",
+          fact_focus_label: "Education",
+          fact_focus_value: "Michigan SI + Tsinghua AAD",
+          hero_slide_1: "Portrait of Haochen Liu.",
+          intro_card_1_kicker: "Current",
+          intro_card_1_title: "M.S. in Information, University of Michigan",
+          intro_card_1_body:
+            "Currently studying Big Data Analytics at the University of Michigan School of Information while continuing to build a design practice around robotics, AI products, and human-centered systems.",
+          intro_card_2_kicker: "Background",
+          intro_card_2_title: "Industrial design grounded in product execution",
+          intro_card_2_body:
+            "Trained at Tsinghua University Academy of Arts & Design, with experience spanning humanoid robot design, biomimetic product development, automotive interior design, and data-informed product work.",
+          overview_1_kicker: "Profile",
+          overview_1_title: "Personal website for robotics design",
           overview_1_body:
-            "This site is organized as a personal portfolio rather than a single case study. It brings together two projects with different goals: one full-size humanoid platform and one interactive bionic product.",
-          overview_2_kicker: "Project 01",
-          overview_2_title: "DeepCybo",
+            "This website presents Haochen Liu's background, design perspective, and selected robotics projects. It highlights product thinking across form development, CAD surfacing, CMF direction, and engineering collaboration.",
+          overview_2_kicker: "Education",
+          overview_2_title: "University of Michigan + Tsinghua University",
           overview_2_body:
-            "A full-size humanoid robot where I handled form language, surfacing, CMF direction, packaging logic, and the path from presentation imagery to final built presence.",
-          overview_3_kicker: "Project 02",
-          overview_3_title: "Noetix",
+            "Haochen is pursuing an M.S. in Information at the University of Michigan and previously earned a B.A. from the Academy of Arts & Design at Tsinghua University, with a minor in Product Design.",
+          overview_3_kicker: "Selected Work",
+          overview_3_title: "Humanoids, biomimetic products, and intelligent systems",
           overview_3_body:
-            "An interactive bionic robot product centered on face perception, upper-body identity, and screen-supported emotional interaction for public-facing communication scenarios.",
+            "Featured work includes DeepCybo Prime, Xiao Nuo, and Hobbs 3.0, with responsibilities covering overall form language, upper-body identity, digital presentation assets, and build-aware design integration.",
           project_header_kicker: "Project 01",
           project_header_title: "DeepCybo Prime, DeepCybo",
           project_header_body:
-            "A full-size humanoid robot project completed with DeepCybo, focused on turning a strong visual identity into a buildable machine with coherent proportions, shell logic, and final public presence.",
+            "DeepCybo Prime is a full-size humanoid robot project completed with DeepCybo. I led the industrial design across form language, shell logic, packaging-aware surfacing, and the translation from visual concept to final public-facing prototype.",
           meta_1_label: "Deliverables",
           meta_1_value: "Final prototype photos, concept design, render development, CAD integration",
           meta_2_label: "Contribution",
           meta_2_value: "Owned the complete external form and integration logic",
           chapter_1_title: "Final physical photos",
           chapter_1_body:
-            "This section follows the exact folder structure from my project archive. It gathers the clean real-world photography of the finished robot, including studio-style views, direct detail shots, and close-ups of the final build.",
+            "This section gathers real-world photography of the finished robot, including studio-style views, direct detail shots, and close-ups of the final build.",
           jpcl_kicker: "Featured Recognition",
           jpcl_title: "DeepCybo Prime on the cover of J. Phys. Chem. Lett.",
           jpcl_body:
@@ -345,33 +374,33 @@
             "Cover appearance on <em>J. Phys. Chem. Lett.</em> featuring DeepCybo Prime.",
           jpcl_note_kicker: "Why it matters",
           jpcl_note_body:
-            "This moment shows that the visual identity of the robot held up not only in product renders and exhibition settings, but also as part of a polished scientific publication image. It is a strong signal of the project's communicative quality and cultural reach.",
+            "This moment shows the robot's visual identity performing strongly across product renders, exhibition settings, and polished scientific publication imagery. It is a strong signal of the project's communicative quality and cultural reach.",
           chapter_2_title: "Early concept design",
           chapter_2_body:
-            "This group comes directly from the `初期概念设计` folder and shows the earlier visual exploration stage: presentation renders, perspective studies, and concept images used before the final direction was locked.",
+            "This group shows the early visual exploration stage, including presentation renders, perspective studies, and concept images developed before the final direction was locked.",
           chapter_3_title: "3D model",
           chapter_3_body:
-            "This group follows the `3D-Model` folder and focuses on surfaced CAD, packaging-aware development, and the transition from concept images into buildable geometry.",
+            "This group focuses on surfaced CAD, packaging-aware development, and the transition from concept images into buildable geometry.",
           chapter_4_title: "Photos with people",
           chapter_4_body:
-            "This section follows the `与人合影` folder and shows DeepCybo Prime in exhibition, interview, and lab contexts. It includes team moments, public-facing scenes, and portraits with the robot.",
+            "This section shows DeepCybo Prime in exhibition, interview, and lab contexts. It includes team moments, public-facing scenes, and portraits with the robot.",
           chapter_4_note_kicker: "Design note",
           chapter_4_note_body:
-            "Using the same directory structure on the website makes the project archive more faithful to the way I actually organized the work during development.",
+            "These photos show how the robot carried its visual identity across studio, exhibition, and team settings.",
           chapter_5_title: "Video documentation",
           chapter_5_body:
             "Original project videos documenting concept presentation, modeling review, and real-world interaction.",
           noetix_header_kicker: "Project 02",
           noetix_header_title: "Noetix robotics product family",
           noetix_header_body:
-            "At Noetix Robotics, I worked on the upper-body industrial design language shared across multiple bionic and interactive robot products. This section includes Xiao Nuo as an interactive humanoid communication product and Hobbs 3.0 as a producible bionic service robot, both carrying forward the torso and neck design system I developed.",
+            "At Noetix Robotics, I worked on an upper-body industrial design language shared across multiple bionic and interactive robot products. This section includes Xiao Nuo as an interactive humanoid communication product and Hobbs 3.0 as a producible bionic service robot, both built from the torso and neck design system I developed.",
           noetix_meta_1_label: "Scope",
           noetix_meta_1_value: "Upper-body product identity, torso and neck surfacing, screen integration",
           noetix_meta_2_label: "Timeline",
           noetix_meta_2_value: "Feb. 2025 - Apr. 2025",
           noetix_title: "Xiao Nuo, interactive humanoid communication product",
           noetix_body:
-            "Xiao Nuo is not just a form study. It is a real interactive product used for face-to-face communication, public demonstration, and emotionally expressive interaction. These images combine surfaced CAD, prototype photography, and public event scenes to show how the upper-body design supports friendliness, readability, and presence.",
+            "Xiao Nuo is an interactive product used for face-to-face communication, public demonstration, and emotionally expressive interaction. These images combine surfaced CAD, prototype photography, and public event scenes to show how the upper-body design supports friendliness, readability, and presence.",
           noetix_note_kicker: "Design focus",
           noetix_note_body:
             "The key challenge in Xiao Nuo was balancing product intimacy with robotic credibility. The head, neck, chest screen, and shoulder transitions all had to work together so the robot could feel approachable while still reading as a coherent technology product.",
@@ -380,88 +409,100 @@
             "Hobbs 3.0 extends the same torso and neck design language into another product line. As you described it, Noetix Robotics Hobbs 3.0 is the world's first producible bionic service robot, featuring built-in cameras for eyes. It was displayed at the Appliance and Electronics World Expo in Shanghai, China.",
           hobbs_note_kicker: "Shared design language",
           hobbs_note_body:
-            "Even though Hobbs 3.0 is not Xiao Nuo, it still carries the torso and neck system I designed. Including it here makes the Noetix section more accurate: it shows how one upper-body design language can scale across multiple interactive robot products with different faces, scenarios, and public roles.",
+            "Hobbs 3.0 carries the same torso and neck system I designed. Including it here shows how one upper-body design language can scale across multiple interactive robot products with different faces, scenarios, and public roles.",
           footer_body: "Industrial design, robotics, product vision, and interface systems.",
           footer_resume: "Resume PDF",
+          footer_portfolio_pdf: "Portfolio PDF",
           lightbox_close: "Close"
         },
         zh: {
-          page_title: "Haochen Liu | 工业设计作品集",
+          page_title: "Haochen Liu | 个人网站",
+          nav_about: "关于我",
           nav_project: "DeepCybo Prime",
           nav_noetix: "松延动力",
           nav_resume: "简历",
-          hero_eyebrow: "Haochen Liu",
-          hero_title: "机器人工业设计",
+          nav_portfolio_pdf: "作品集 PDF",
+          hero_eyebrow: "关于我",
+          hero_title: "Haochen Liu",
           hero_subtitle: "人形机器人、仿生产品与具身交互。",
           hero_lede:
-            "这个网站是我的个人作品集，而不是只讲一个项目。这里收录了两个不同尺度、不同交互目标的机器人项目：一是深度机智的 DeepCybo Prime，全尺寸人形机器人，重点在整体造型、结构包装和最终落地；二是松延动力的小诺，一个面向真实交流场景的可交互仿生机器人产品，重点在上半身产品形象、屏幕沟通和情感化呈现。",
-          hero_button_project: "查看 DeepCybo",
+            "Haochen Liu 是一位在安娜堡与北京之间工作的机器人工业设计师，关注产品造型、具身交互与可落地的工程整合，长期聚焦人形机器人、仿生产品与智能实体系统。",
+          hero_button_project: "查看代表项目",
           hero_button_noetix: "查看 Noetix",
           hero_button_resume: "查看简历",
+          hero_button_portfolio_pdf: "查看作品集 PDF",
           fact_role_label: "方向",
           fact_role_value: "机器人工业设计",
-          fact_timeline_label: "项目",
-          fact_timeline_value: "深度机智 + 松延动力",
-          fact_focus_label: "关键词",
-          fact_focus_value: "具身、交互、CMF、CAD",
-          hero_slide_1: "DeepCybo Prime 主视觉图片。",
-          overview_1_kicker: "作品集范围",
-          overview_1_title: "两个机器人产品故事",
+          fact_timeline_label: "常驻",
+          fact_timeline_value: "安娜堡 + 北京",
+          fact_focus_label: "教育",
+          fact_focus_value: "密歇根 SI + 清华美院",
+          hero_slide_1: "Haochen Liu 个人照片。",
+          intro_card_1_kicker: "当前",
+          intro_card_1_title: "密歇根大学信息学院信息学硕士",
+          intro_card_1_body:
+            "目前在密歇根大学信息学院攻读 Big Data Analytics 方向的 Information 硕士，同时持续推进围绕机器人、AI 产品与以人为中心系统的设计实践。",
+          intro_card_2_kicker: "背景",
+          intro_card_2_title: "以产品落地为核心的工业设计训练",
+          intro_card_2_body:
+            "本科毕业于清华大学美术学院，辅修产品设计，经历覆盖人形机器人设计、仿生产品开发、汽车内饰设计，以及数据驱动的产品工作。",
+          overview_1_kicker: "简介",
+          overview_1_title: "机器人设计个人网站",
           overview_1_body:
-            "这个网站按个人作品集来组织，而不是单一案例页面。它汇集了两个目标不同的机器人项目：一个是全尺寸人形机器人平台，另一个是面向真实交流场景的仿生交互产品。",
-          overview_2_kicker: "项目 01",
-          overview_2_title: "DeepCybo / 深度机智",
+            "这个网站展示 Haochen Liu 的个人背景、设计视角和代表性机器人项目，涵盖造型语言、CAD 曲面、CMF 方向以及与工程协作相关的产品思考。",
+          overview_2_kicker: "教育",
+          overview_2_title: "密歇根大学 + 清华大学",
           overview_2_body:
-            "一个全尺寸人形机器人项目，我负责整体造型语言、曲面、CMF 方向、包装逻辑，以及从展示图像到最终实物落地的完整推进。",
-          overview_3_kicker: "项目 02",
-          overview_3_title: "Noetix / 松延动力",
+            "Haochen 目前在密歇根大学攻读信息学硕士，此前毕业于清华大学美术学院，并辅修产品设计，形成了设计与技术并行的学习路径。",
+          overview_3_kicker: "代表项目",
+          overview_3_title: "人形机器人、仿生产品与智能系统",
           overview_3_body:
-            "一个可交互的仿生机器人产品，重点在上半身身份识别、面部感知、屏幕沟通以及面向公众展示时的情感交互体验。",
+            "代表项目包括 DeepCybo Prime、小诺和 Hobbs 3.0，工作内容覆盖整体造型语言、上半身产品识别、数字展示资产以及面向落地的设计整合。",
           project_header_kicker: "项目 01",
           project_header_title: "DeepCybo Prime，深度机智",
           project_header_body:
-            "这是我与深度机智合作完成的全尺寸人形机器人项目，重点是把强烈的视觉识别度转化为真正可建造、比例统一、结构逻辑清晰并能公开展示的实体机器人。",
+            "DeepCybo Prime 是我与深度机智共同完成的全尺寸人形机器人项目。我主导了整体工业设计，覆盖造型语言、外壳逻辑、面向结构包装的曲面设计，以及从视觉概念到最终公开展示原型的转化。",
           meta_1_label: "交付内容",
           meta_1_value: "最终实拍、概念设计、渲染推进、CAD 与结构整合",
           meta_2_label: "个人贡献",
           meta_2_value: "负责整体外观造型与外观-结构一体化逻辑",
           chapter_1_title: "实物直拍",
           chapter_1_body:
-            "这一部分直接对应我项目文件夹里的 `实物直拍`，集中展示最终机器人的真实照片，包括干净视角、细节特写和实体状态。",
+            "这一部分收录机器人完成后的真实照片，包括棚拍、细节特写和整体成品状态。",
           jpcl_kicker: "项目亮点",
           jpcl_title: "DeepCybo Prime 登上 J. Phys. Chem. Lett. 封面",
           jpcl_body:
-            "很荣幸，我为 DeepCybo 设计的机器人 Prime 登上了 <em>The Journal of Physical Chemistry Letters</em>（ACS）封面。这张封面图让机器人不仅作为产品形象成立，也进入了更广泛的科研传播语境。",
+            "很荣幸，我为 DeepCybo 设计的机器人 Prime 登上了 <em>The Journal of Physical Chemistry Letters</em>（ACS）封面。这张封面图让机器人作为产品形象成立，也进入了更广泛的科研传播语境。",
           jpcl_caption: "DeepCybo Prime 登上 <em>J. Phys. Chem. Lett.</em> 封面。",
           jpcl_note_kicker: "意义",
           jpcl_note_body:
-            "这说明机器人的视觉形象不仅能支撑产品渲染和展会展示，也足以成为高完成度科研封面的核心视觉主角，体现了项目在传播层面的表现力。",
+            "这说明机器人的视觉形象能够支撑产品渲染、展会展示和高完成度科研封面，体现了项目在传播层面的表现力。",
           chapter_2_title: "初期概念设计",
           chapter_2_body:
-            "这一部分直接对应 `初期概念设计` 文件夹，展示前期视觉探索、展示渲染和概念阶段的方向推进。",
+            "这一组展示最终方向确定前的视觉探索过程，包括展示图、透视图和概念阶段图像。",
           chapter_3_title: "3D-Model",
           chapter_3_body:
-            "这一部分对应 `3D-Model` 文件夹，重点是曲面、结构包装和从概念图走向可落地几何模型的过程。",
+            "这一组重点展示曲面 CAD、结构包装推敲，以及从概念图到可实现几何的推进过程。",
           chapter_4_title: "与人合影",
           chapter_4_body:
-            "这一部分直接对应 `与人合影` 文件夹，展示 DeepCybo Prime 在展会、采访、实验室等真实场景中的公开呈现。",
+            "这一部分展示 DeepCybo Prime 在展会、采访、实验室等真实场景中的公开呈现。",
           chapter_4_note_kicker: "设计说明",
           chapter_4_note_body:
-            "网站和本地项目使用同样的目录结构，会更接近我实际整理项目材料时的方式，也更方便之后继续补图。",
+            "这些照片展示了机器人在棚拍、展会和团队场景中保持一致视觉识别的状态。",
           chapter_5_title: "视频记录",
           chapter_5_body:
             "保留项目原始视频，记录概念展示、建模过程与真实场景中的互动状态。",
           noetix_header_kicker: "项目 02",
           noetix_header_title: "松延动力产品系列",
           noetix_header_body:
-            "在松延动力，我参与的是一套可复用到多个仿生与交互机器人产品上的上半身工业设计语言。这一部分不仅包括小诺这个面向交流场景的交互机器人产品，也包括 Hobbs 3.0 这样的另一条产品线，它们都沿用了我设计的躯干和脖子系统。",
+            "在松延动力，我参与了一套可复用到多个仿生与交互机器人产品上的上半身工业设计语言。这一部分包括面向交流场景的小诺，以及可量产的仿生服务机器人 Hobbs 3.0，它们都延续了我设计的躯干与脖子系统。",
           noetix_meta_1_label: "工作范围",
           noetix_meta_1_value: "上半身产品识别、躯干与脖子曲面、屏幕界面整合",
           noetix_meta_2_label: "时间",
           noetix_meta_2_value: "2025.02 - 2025.04",
           noetix_title: "小诺：面向真实交流场景的交互仿生机器人产品",
           noetix_body:
-            "小诺不是单纯的 form study，而是一个真实可交互的产品。它要面对面对话、公开展示和情感化交流场景。这一部分把曲面 CAD、实体照片和现场交互图放在一起，去看上半身设计如何支撑亲和感、可读性和存在感。",
+            "小诺是一个面向面对面交流、公开展示和情感化互动场景的真实交互产品。这一部分把曲面 CAD、实体照片和现场交互图放在一起，去看上半身设计如何支撑亲和感、可读性和存在感。",
           noetix_note_kicker: "设计重点",
           noetix_note_body:
             "小诺最关键的设计挑战，是在产品亲和感和机器人可信度之间找到平衡。头部、脖子、胸前屏幕和肩部过渡必须一起工作，既要让人愿意接近，也要保持完整一致的科技产品气质。",
@@ -470,9 +511,10 @@
             "Hobbs 3.0 把同一套躯干和脖子设计语言延展到了另一条产品线上。按照你的介绍，Noetix Robotics Hobbs 3.0 是全球首个可量产的仿生“服务机器人”，眼部内置摄像头，并曾在上海 Appliance and Electronics World Expo 上展出。",
           hobbs_note_kicker: "共享设计语言",
           hobbs_note_body:
-            "虽然 Hobbs 3.0 不是小诺，但它同样沿用了我设计的躯干和脖子系统。把它放进这里，会更准确地说明我在松延动力做的不是单一型号，而是一套能够适配不同脸型、不同场景和不同产品角色的上半身设计语言。",
+            "Hobbs 3.0 同样沿用了我设计的躯干和脖子系统。把它放进这里，可以更准确地说明这套上半身设计语言如何适配不同脸型、不同场景和不同产品角色。",
           footer_body: "工业设计、机器人、产品视觉与交互系统。",
           footer_resume: "简历 PDF",
+          footer_portfolio_pdf: "作品集 PDF",
           lightbox_close: "关闭"
         }
       };

@@ -213,6 +213,11 @@ h3 {
   font-size: 1.02rem;
 }
 
+.lede {
+  margin: 0;
+  max-width: 38rem;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
@@ -269,7 +274,8 @@ h3 {
 }
 
 .hero-stage {
-  display: block;
+  display: grid;
+  gap: 16px;
 }
 
 .hero-single,
@@ -292,6 +298,35 @@ h3 {
   height: auto;
   object-fit: contain;
   border-radius: 14px;
+}
+
+.hero-portrait img {
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.hero-sidecards {
+  display: grid;
+  gap: 16px;
+}
+
+.hero-sidecard {
+  padding: 20px 22px;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(8, 16, 27, 0.94), rgba(5, 10, 18, 0.9)),
+    radial-gradient(circle at top right, rgba(96, 240, 210, 0.12), transparent 34%);
+}
+
+.hero-sidecard h2 {
+  margin-bottom: 8px;
+  font-size: clamp(1.2rem, 1.8vw, 1.6rem);
+}
+
+.hero-sidecard p:last-child {
+  margin-bottom: 0;
 }
 
 .media-card img,
