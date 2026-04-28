@@ -193,22 +193,32 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px 16px;
-  margin-top: 2px;
+  gap: 10px;
+  margin-top: 4px;
   font-size: 0.95rem;
   color: var(--muted);
 }
 
-.hero-links a,
-.hero-links span {
+.hero-links a {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  min-height: 38px;
+  padding: 0 14px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel-soft);
+  box-shadow: 0 6px 16px rgba(46, 78, 140, 0.05);
   text-decoration: none;
+  transition:
+    border-color 0.16s ease,
+    color 0.16s ease,
+    transform 0.16s ease;
 }
 
 .hero-links a:hover {
+  border-color: var(--line-strong);
   color: var(--accent);
+  transform: translateY(-1px);
 }
 
 .content-section,
@@ -229,8 +239,8 @@ h3 {
 }
 
 .two-card-grid {
-  grid-template-columns: repeat(2, minmax(320px, 430px));
-  max-width: 900px;
+  grid-template-columns: repeat(2, minmax(340px, 460px));
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -247,8 +257,9 @@ h3 {
 }
 
 .project-card img {
-  aspect-ratio: 4 / 3;
+  aspect-ratio: 4 / 3.25;
   object-fit: cover;
+  object-position: center 28%;
 }
 
 .project-card-body {
