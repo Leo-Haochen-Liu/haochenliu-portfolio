@@ -276,6 +276,8 @@ h3 {
 .hero-stage {
   display: grid;
   gap: 16px;
+  align-content: start;
+  justify-items: end;
 }
 
 .hero-single,
@@ -304,6 +306,11 @@ h3 {
   aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: center top;
+}
+
+.hero-portrait {
+  width: min(100%, 280px);
+  cursor: default;
 }
 
 .hero-sidecards {
