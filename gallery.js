@@ -2,11 +2,13 @@ const galleries = {
   deepcybo: [
     {
       title: "期刊封面",
+      titleEn: "Journal Cover",
       cover: "./assets/deepcybo-live/JPCL.jpg",
       items: ["./assets/deepcybo-live/JPCL.jpg"],
     },
     {
       title: "最终实物",
+      titleEn: "Final Prototype",
       cover: "./assets/deepcybo/实物直拍/04557e9aecb5c64b1126d219582dd410.JPG",
       items: [
         "./assets/deepcybo/实物直拍/04557e9aecb5c64b1126d219582dd410.JPG",
@@ -33,6 +35,7 @@ const galleries = {
     },
     {
       title: "概念渲染",
+      titleEn: "Concept Renderings",
       cover: "./assets/deepcybo/初期概念设计/IMG_1634.PNG",
       items: [
         "./assets/deepcybo/初期概念设计/3f563628bfab1ebd3d97c87261ac4046.JPG",
@@ -50,6 +53,7 @@ const galleries = {
     },
     {
       title: "3D建模",
+      titleEn: "3D Modeling",
       cover: "./assets/deepcybo/3D-Model/0567e31fda8a24a75320cb814d4c3ff5.PNG",
       items: [
         "./assets/deepcybo/3D-Model/0340ff5bb093bfa7f5038b604ac20958.jpg",
@@ -78,6 +82,7 @@ const galleries = {
     },
     {
       title: "公开展示",
+      titleEn: "Public Display",
       cover: "./assets/deepcybo/与人合影/21f5f415ac7cda9c53f394b8d2d33e91.JPG",
       items: [
         "./assets/deepcybo/与人合影/1768.MP4",
@@ -94,18 +99,11 @@ const galleries = {
         "./assets/deepcybo/与人合影/和自己的合影.jpg",
       ],
     },
-    {
-      title: "实验记录",
-      cover: "./assets/deepcybo-live/IMG_0240.jpg",
-      items: [
-        "./assets/deepcybo-live/IMG_0240.jpg",
-        "./assets/deepcybo-live/IMG_6082.jpg",
-      ],
-    },
   ],
   noetix: [
     {
       title: "最终实物",
+      titleEn: "Final Prototype",
       cover: "./assets/noetix/xiaonuo-card-focus.jpg",
       items: [
         "./assets/noetix/xiaonuo-card-focus.jpg",
@@ -116,6 +114,7 @@ const galleries = {
     },
     {
       title: "3D建模",
+      titleEn: "3D Modeling",
       cover: "./assets/noetix/mmexport1739597630606.png",
       items: [
         "./assets/noetix/mmexport1739555602166.png",
@@ -126,6 +125,7 @@ const galleries = {
     },
     {
       title: "公开展示",
+      titleEn: "Public Display",
       cover: "./assets/noetix/116009214b68e5c.png",
       items: [
         "./assets/noetix/116009214b68e5c.png",
@@ -133,11 +133,6 @@ const galleries = {
         "./assets/noetix/d99055cc-1b0e-4870-853f-500ce1154a5a.jpg",
         "./assets/noetix/hobbs_3_portrait.png",
       ],
-    },
-    {
-      title: "实验记录",
-      cover: "./assets/noetix/MEITU_20250514_212143991.jpg",
-      items: ["./assets/noetix/MEITU_20250514_212143991.jpg"],
     },
   ],
 };
@@ -207,7 +202,8 @@ function renderMediaItem(src) {
 }
 
 function openGallery(dialog, category) {
-  dialog.querySelector("h2").textContent = category.title;
+  const isEnglish = document.documentElement.lang.startsWith("en");
+  dialog.querySelector("h2").textContent = isEnglish ? category.titleEn : category.title;
   const grid = dialog.querySelector(".media-grid");
   grid.replaceChildren(...category.items.map(renderMediaItem));
   dialog.hidden = false;
@@ -215,12 +211,13 @@ function openGallery(dialog, category) {
 }
 
 function renderCategory(category, dialog) {
+  const isEnglish = document.documentElement.lang.startsWith("en");
   const button = document.createElement("button");
   button.className = "gallery-category";
   button.type = "button";
   button.innerHTML = `
     <img src="${category.cover}" alt="" loading="lazy" />
-    <span>${category.title}</span>
+    <span>${isEnglish ? category.titleEn : category.title}</span>
   `;
   button.addEventListener("click", () => openGallery(dialog, category));
   return button;

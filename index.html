@@ -41,7 +41,7 @@
           <h2 data-i18n="projects_title">My Projects</h2>
         </div>
         <div class="project-card-grid two-card-grid">
-          <a class="project-card" href="./deepcybo.html">
+          <a id="deepcybo-project-link" class="project-card" href="./deepcybo-en.html">
             <img src="./assets/deepcybo-live/deepcybo-card.jpg" alt="DeepCybo Prime" />
             <div class="project-card-body">
               <h3 data-i18n="card_deepcybo_title">DeepCybo Prime</h3>
@@ -51,7 +51,7 @@
               <span class="card-link" data-i18n="card_link_label">Open</span>
             </div>
           </a>
-          <a class="project-card" href="./noetix.html">
+          <a id="noetix-project-link" class="project-card" href="./noetix-en.html">
             <img src="./assets/noetix/xiaonuo-card-focus.jpg" alt="Xiao Nuo" />
             <div class="project-card-body">
               <h3 data-i18n="card_noetix_title">Noetix Xiao Nuo</h3>
@@ -262,6 +262,10 @@
         document.getElementById("lang-toggle").textContent = currentLang === "en" ? "中文" : "English";
         document.getElementById("hero-resume-link").href =
           currentLang === "zh" ? "./assets/resume_haochen_liu_cn.pdf" : "./assets/resume_haochen_liu.pdf";
+        document.getElementById("deepcybo-project-link").href =
+          currentLang === "zh" ? "./deepcybo.html" : "./deepcybo-en.html";
+        document.getElementById("noetix-project-link").href =
+          currentLang === "zh" ? "./noetix.html" : "./noetix-en.html";
       }
 
       document.getElementById("lang-toggle").addEventListener("click", () => {
