@@ -342,7 +342,7 @@ h3 {
 }
 
 .media-dialog-panel {
-  width: min(980px, 100%);
+  width: min(1180px, 100%);
   margin: 0 auto;
   background: #fff;
   border-radius: 8px;
@@ -382,25 +382,26 @@ h3 {
 }
 
 .media-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2px;
-  padding: 2px;
+  column-count: 4;
+  column-gap: 16px;
+  padding: 16px;
 }
 
 .media-tile {
   position: relative;
   display: block;
-  aspect-ratio: 1 / 1;
+  break-inside: avoid;
+  margin-bottom: 16px;
   overflow: hidden;
   background: #eef2f8;
+  border-radius: 8px;
 }
 
 .media-tile img,
 .media-tile video {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 .media-badge {
@@ -533,7 +534,13 @@ h3 {
   }
 
   .media-grid {
-    grid-template-columns: repeat(2, 1fr);
+    column-count: 2;
+    column-gap: 10px;
+    padding: 10px;
+  }
+
+  .media-tile {
+    margin-bottom: 10px;
   }
 
   .timeline-content {
