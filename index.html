@@ -35,11 +35,8 @@
       <section id="projects" class="content-section">
         <div class="section-header">
           <h2 data-i18n="projects_title">Selected Projects</h2>
-          <p data-i18n="projects_body">
-            A compact selection of robotics and transportation design projects.
-          </p>
         </div>
-        <div class="project-card-grid">
+        <div class="project-card-grid two-card-grid">
           <article class="project-card">
             <img src="./assets/deepcybo-live/21f5f415ac7cda9c53f394b8d2d33e91.JPG" alt="DeepCybo Prime" />
             <div class="project-card-body">
@@ -51,23 +48,13 @@
             </div>
           </article>
           <article class="project-card">
-            <img src="./assets/noetix/2fa78555b42a671.png" alt="Xiao Nuo" />
+            <img src="./assets/noetix/xiaonuo-card.jpg" alt="Xiao Nuo" />
             <div class="project-card-body">
               <h3 data-i18n="card_noetix_title">Noetix Xiao Nuo</h3>
               <p data-i18n="card_noetix_body">
                 Upper-body product language, face-and-screen integration, and public-facing interaction design.
               </p>
               <a class="card-link" href="./noetix.html" data-i18n="card_link_label">Open</a>
-            </div>
-          </article>
-          <article class="project-card">
-            <img src="./assets/auto-page-17.jpg" alt="Automotive design portfolio" />
-            <div class="project-card-body">
-              <h3 data-i18n="card_auto_title">Automotive Design</h3>
-              <p data-i18n="card_auto_body">
-                Additional portfolio materials from earlier transportation and industrial design work.
-              </p>
-              <a class="card-link" href="./assets/portfolio-Haochen%20Liu.pdf" data-i18n="card_link_label">Open</a>
             </div>
           </article>
         </div>
@@ -150,17 +137,12 @@
           hero_lede:
             "Haochen Liu is an industrial designer working across robotics, embodied interaction, and intelligent physical systems.",
           projects_title: "Selected Projects",
-          projects_body:
-            "A compact selection of robotics and transportation design projects.",
           card_deepcybo_title: "DeepCybo Prime",
           card_deepcybo_body:
             "Humanoid robot industrial design, CAD integration, and final prototype realization.",
           card_noetix_title: "Noetix Xiao Nuo",
           card_noetix_body:
             "Upper-body product language, face-and-screen integration, and public-facing interaction design.",
-          card_auto_title: "Automotive Design",
-          card_auto_body:
-            "Additional portfolio materials from earlier transportation and industrial design work.",
           card_link_label: "Open",
           timeline_title: "Timeline",
           timeline_body:
@@ -198,17 +180,12 @@
           hero_lede:
             "刘浩辰，清华大学美术学院工业设计系 24 级毕业生，现就读于密歇根大学安娜堡分校信息学院。前汽车设计师，曾在 2025 年参与了松延动力仿生人形机器人小诺的外观设计，主导了中关村学院*中关村人工智能研究院、深度机智的人形机器人 Prime 的工业设计，目前专注于具身大模型空间感知能力增强的研究。",
           projects_title: "个人项目",
-          projects_body:
-            "以卡片形式呈现机器人与汽车设计相关的代表项目。",
           card_deepcybo_title: "深度机智 Prime",
           card_deepcybo_body:
             "人形机器人工业设计、CAD 整合与最终原型实现。",
           card_noetix_title: "松延动力小诺",
           card_noetix_body:
             "上半身产品语言、面部与屏幕整合，以及面向公众交互的表达设计。",
-          card_auto_title: "汽车设计",
-          card_auto_body:
-            "更早期的交通工具与工业设计相关作品材料。",
           card_link_label: "查看详情",
           timeline_title: "时间线",
           timeline_body:
@@ -248,7 +225,7 @@
         });
         document.getElementById("lang-toggle").textContent = currentLang === "en" ? "中文" : "English";
         document.getElementById("footer-resume-link").href =
-          currentLang === "zh" ? "./resume-cn.html" : "./assets/resume_haochen_liu.pdf";
+          currentLang === "zh" ? "./assets/resume_haochen_liu_cn.pdf" : "./assets/resume_haochen_liu.pdf";
       }
 
       document.getElementById("lang-toggle").addEventListener("click", () => {
