@@ -36,22 +36,12 @@
         <div class="section-header">
           <h2 data-i18n="projects_title">Selected Projects</h2>
           <p data-i18n="projects_body">
-            A compact overview of portfolio materials, project case studies, and supporting documents.
+            A compact selection of robotics and transportation design projects.
           </p>
         </div>
         <div class="project-card-grid">
           <article class="project-card">
-            <img src="./assets/photo.JPG" alt="Portrait thumbnail" />
-            <div class="project-card-body">
-              <h3 data-i18n="card_resume_title">Personal Resume</h3>
-              <p data-i18n="card_resume_body">
-                Academic background, research direction, and recent professional experience.
-              </p>
-              <a id="resume-link" class="card-link" href="./assets/resume_haochen_liu.pdf" data-i18n="card_link_label">Open</a>
-            </div>
-          </article>
-          <article class="project-card">
-            <img src="./assets/deepcybo-live/JPCL.jpg" alt="DeepCybo Prime" />
+            <img src="./assets/deepcybo-live/21f5f415ac7cda9c53f394b8d2d33e91.JPG" alt="DeepCybo Prime" />
             <div class="project-card-body">
               <h3 data-i18n="card_deepcybo_title">DeepCybo Prime</h3>
               <p data-i18n="card_deepcybo_body">
@@ -61,7 +51,7 @@
             </div>
           </article>
           <article class="project-card">
-            <img src="./assets/noetix/MEITU_20250514_212143991.jpg" alt="Xiao Nuo" />
+            <img src="./assets/noetix/2fa78555b42a671.png" alt="Xiao Nuo" />
             <div class="project-card-body">
               <h3 data-i18n="card_noetix_title">Noetix Xiao Nuo</h3>
               <p data-i18n="card_noetix_body">
@@ -71,7 +61,7 @@
             </div>
           </article>
           <article class="project-card">
-            <img src="./assets/deepcybo/初期概念设计/IMG_1634.PNG" alt="Automotive design portfolio" />
+            <img src="./assets/auto-page-17.jpg" alt="Automotive design portfolio" />
             <div class="project-card-body">
               <h3 data-i18n="card_auto_title">Automotive Design</h3>
               <p data-i18n="card_auto_body">
@@ -139,8 +129,8 @@
       <div class="footer-links">
         <a href="mailto:liuhaoch@umich.edu">liuhaoch@umich.edu</a>
         <a href="https://www.linkedin.com/in/haochen-liu">LinkedIn</a>
-        <a href="./assets/resume_haochen_liu.pdf" data-i18n="footer_resume">Resume PDF</a>
-        <a href="./resume-cn.html" data-i18n="footer_resume_cn">Chinese Resume</a>
+        <a id="footer-resume-link" href="./assets/resume_haochen_liu.pdf" data-i18n="footer_resume">Resume PDF</a>
+        <a href="./assets/portfolio-Haochen%20Liu.pdf" data-i18n="footer_portfolio">Portfolio PDF</a>
       </div>
     </footer>
 
@@ -161,10 +151,7 @@
             "Haochen Liu is an industrial designer working across robotics, embodied interaction, and intelligent physical systems.",
           projects_title: "Selected Projects",
           projects_body:
-            "A compact overview of portfolio materials, project case studies, and supporting documents.",
-          card_resume_title: "Personal Resume",
-          card_resume_body:
-            "Academic background, research direction, and recent professional experience.",
+            "A compact selection of robotics and transportation design projects.",
           card_deepcybo_title: "DeepCybo Prime",
           card_deepcybo_body:
             "Humanoid robot industrial design, CAD integration, and final prototype realization.",
@@ -196,8 +183,8 @@
             "B.A. in Industrial Design with parallel interests in product systems, robotics, and visualization.",
           footer_title: "Haochen Liu",
           footer_body: "Industrial design, embodied intelligence, and intelligent physical systems.",
-          footer_resume: "Resume PDF",
-          footer_resume_cn: "Chinese Resume"
+          footer_resume: "Resume",
+          footer_portfolio: "Portfolio PDF"
         },
         zh: {
           page_title: "刘浩辰 | 个人网站",
@@ -212,10 +199,7 @@
             "刘浩辰，清华大学美术学院工业设计系 24 级毕业生，现就读于密歇根大学安娜堡分校信息学院。前汽车设计师，曾在 2025 年参与了松延动力仿生人形机器人小诺的外观设计，主导了中关村学院*中关村人工智能研究院、深度机智的人形机器人 Prime 的工业设计，目前专注于具身大模型空间感知能力增强的研究。",
           projects_title: "个人项目",
           projects_body:
-            "以卡片形式整理个人简历、项目案例与补充作品集材料。",
-          card_resume_title: "个人简历",
-          card_resume_body:
-            "教育背景、研究方向以及近期的设计与项目经历。",
+            "以卡片形式呈现机器人与汽车设计相关的代表项目。",
           card_deepcybo_title: "深度机智 Prime",
           card_deepcybo_body:
             "人形机器人工业设计、CAD 整合与最终原型实现。",
@@ -247,8 +231,8 @@
             "工业设计方向学习，持续关注产品系统、机器人与视觉表达。",
           footer_title: "刘浩辰",
           footer_body: "工业设计、具身智能与智能实体系统。",
-          footer_resume: "英文简历",
-          footer_resume_cn: "中文简历"
+          footer_resume: "个人简历",
+          footer_portfolio: "作品集 PDF"
         }
       };
 
@@ -263,7 +247,7 @@
           node.textContent = t(node.dataset.i18n);
         });
         document.getElementById("lang-toggle").textContent = currentLang === "en" ? "中文" : "English";
-        document.getElementById("resume-link").href =
+        document.getElementById("footer-resume-link").href =
           currentLang === "zh" ? "./resume-cn.html" : "./assets/resume_haochen_liu.pdf";
       }
 
