@@ -24,17 +24,21 @@
         </figure>
         <p class="eyebrow" data-i18n="hero_eyebrow">About</p>
         <h1 data-i18n="hero_title">Haochen Liu</h1>
-        <p class="hero-subtitle" data-i18n="hero_subtitle">
-          Robotics industrial designer focused on humanoids, biomimetic products, and embodied intelligence.
-        </p>
         <p class="hero-lede" data-i18n="hero_lede">
           Haochen Liu is an industrial designer working across robotics, embodied interaction, and intelligent physical systems.
         </p>
+        <div id="contact" class="hero-links">
+          <a href="mailto:liuhaoch@umich.edu">liuhaoch@umich.edu</a>
+          <a href="https://www.linkedin.com/in/haochen-liu">LinkedIn</a>
+          <a id="hero-resume-link" href="./assets/resume_haochen_liu.pdf" data-i18n="hero_resume">Resume</a>
+          <a href="./assets/portfolio-Haochen%20Liu.pdf" data-i18n="hero_portfolio">Portfolio PDF</a>
+          <span data-i18n="hero_xiaohongshu">Xiaohongshu @一只哔mer</span>
+        </div>
       </section>
 
       <section id="projects" class="content-section">
         <div class="section-header">
-          <h2 data-i18n="projects_title">Selected Projects</h2>
+          <h2 data-i18n="projects_title">My Projects</h2>
         </div>
         <div class="project-card-grid two-card-grid">
           <article class="project-card">
@@ -108,16 +112,10 @@
       </section>
     </main>
 
-    <footer id="contact" class="site-shell footer">
+    <footer class="site-shell footer">
       <div>
         <p class="footer-title" data-i18n="footer_title">Haochen Liu</p>
         <p data-i18n="footer_body">Industrial design, embodied intelligence, and intelligent physical systems.</p>
-      </div>
-      <div class="footer-links">
-        <a href="mailto:liuhaoch@umich.edu">liuhaoch@umich.edu</a>
-        <a href="https://www.linkedin.com/in/haochen-liu">LinkedIn</a>
-        <a id="footer-resume-link" href="./assets/resume_haochen_liu.pdf" data-i18n="footer_resume">Resume PDF</a>
-        <a href="./assets/portfolio-Haochen%20Liu.pdf" data-i18n="footer_portfolio">Portfolio PDF</a>
       </div>
     </footer>
 
@@ -128,15 +126,17 @@
         en: {
           page_title: "Haochen Liu | Personal Website",
           brand_name: "Haochen Liu",
-          nav_projects: "Projects",
+          nav_projects: "My Projects",
           nav_timeline: "Timeline",
           nav_contact: "Contact",
           hero_eyebrow: "About",
           hero_title: "Haochen Liu",
-          hero_subtitle: "Robotics industrial designer focused on humanoids, biomimetic products, and embodied intelligence.",
           hero_lede:
-            "Haochen Liu is an industrial designer working across robotics, embodied interaction, and intelligent physical systems.",
-          projects_title: "Selected Projects",
+            "Haochen Liu graduated in Industrial Design from the Academy of Arts & Design at Tsinghua University and is now pursuing a master's degree at the University of Michigan School of Information. He previously worked in automotive design; in 2025, he contributed to the exterior design of Xiao Nuo at Songyan Dynamics (Beijing) Technology Co., Ltd. and led the industrial design of the humanoid robot Prime at DeepCybo (Beijing) Technology Co., Ltd. He is currently focused on enhancing spatial perception in embodied foundation models.",
+          hero_resume: "Resume",
+          hero_portfolio: "Portfolio PDF",
+          hero_xiaohongshu: "Xiaohongshu @一只哔mer",
+          projects_title: "My Projects",
           card_deepcybo_title: "DeepCybo Prime",
           card_deepcybo_body:
             "Humanoid robot industrial design, CAD integration, and final prototype realization.",
@@ -176,9 +176,11 @@
           nav_contact: "联系方式",
           hero_eyebrow: "关于我",
           hero_title: "刘浩辰",
-          hero_subtitle: "研究领域：汽车设计、人形机器人工业设计、具身智能算法",
           hero_lede:
-            "刘浩辰，清华大学美术学院工业设计系 24 级毕业生，现就读于密歇根大学安娜堡分校信息学院。前汽车设计师，曾在 2025 年参与了松延动力仿生人形机器人小诺的外观设计，主导了中关村学院*中关村人工智能研究院、深度机智的人形机器人 Prime 的工业设计，目前专注于具身大模型空间感知能力增强的研究。",
+            "刘浩辰，毕业于清华大学美术学院工业设计系，现就读于密歇根大学安娜堡分校信息学院。曾任汽车设计师；2025 年参与松延动力（北京）科技有限公司仿生机器人“小诺”的外观设计，并主导深度机智（北京）科技有限公司人形机器人 Prime 的工业设计。目前专注于具身大模型空间感知能力增强研究。",
+          hero_resume: "个人简历",
+          hero_portfolio: "作品集 PDF",
+          hero_xiaohongshu: "小红书 @一只哔mer",
           projects_title: "个人项目",
           card_deepcybo_title: "深度机智 Prime",
           card_deepcybo_body:
@@ -224,7 +226,7 @@
           node.textContent = t(node.dataset.i18n);
         });
         document.getElementById("lang-toggle").textContent = currentLang === "en" ? "中文" : "English";
-        document.getElementById("footer-resume-link").href =
+        document.getElementById("hero-resume-link").href =
           currentLang === "zh" ? "./assets/resume_haochen_liu_cn.pdf" : "./assets/resume_haochen_liu.pdf";
       }
 
