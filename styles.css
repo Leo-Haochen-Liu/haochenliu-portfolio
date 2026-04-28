@@ -239,8 +239,8 @@ h3 {
 }
 
 .two-card-grid {
-  grid-template-columns: repeat(2, minmax(340px, 460px));
-  max-width: 960px;
+  grid-template-columns: repeat(2, minmax(300px, 400px));
+  max-width: 840px;
   margin: 0 auto;
 }
 
@@ -259,7 +259,7 @@ h3 {
 .project-card img {
   aspect-ratio: 4 / 3.25;
   object-fit: cover;
-  object-position: center 28%;
+  object-position: center 34%;
 }
 
 .project-card-body {
@@ -345,8 +345,8 @@ h3 {
   }
 
   .two-card-grid {
-    grid-template-columns: repeat(2, minmax(260px, 360px));
-    max-width: 760px;
+    grid-template-columns: repeat(2, minmax(260px, 340px));
+    max-width: 720px;
   }
 }
 
