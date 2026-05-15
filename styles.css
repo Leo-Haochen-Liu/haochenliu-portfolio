@@ -274,6 +274,14 @@ h3 {
   object-position: center 34%;
 }
 
+.project-card video {
+  width: 100%;
+  aspect-ratio: 4 / 3.25;
+  object-fit: cover;
+  display: block;
+  background: #000;
+}
+
 .project-card-body {
   padding: 18px;
 }
